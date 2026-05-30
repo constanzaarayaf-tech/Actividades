@@ -1,0 +1,87 @@
+body{
+    background-color: lightblue;
+}
+h2{
+    color: red;
+}
+
+.logo {
+    height: 20px;                   
+    order: 0;  
+   }
+
+section {
+    margin-bottom: 3rem;
+}
+
+SECTION h2{
+    text-align: center;
+
+}
+
+section p{
+    text-align: center;
+}
+
+#temarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px; 
+}
+
+.card {
+    background: greenyellow;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px;
+    flex:20px); 
+ }
+
+aside {
+    background-color: #e2e8f0;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-left: 5px solid #3182ce;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1a365d;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 3rem;
+    }
+
+    #temarios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    header nav ul {
+        gap: 40px;
+   }
+    }
+
+@media screen and (min-width: 1024px) {
+   
+    main {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+
+    #temarios {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    header nav h1 {
+        font-size: 1.8rem;
+    }
+    }
